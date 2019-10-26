@@ -1,11 +1,10 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'app',
   components: {}
@@ -13,11 +12,17 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+@import "~/assets/scss/styles.scss";
 #app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  height: 100vh;
+}
+* {
+  font-family: "Nunito", sans-serif;
 }
 </style>

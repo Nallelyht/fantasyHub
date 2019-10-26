@@ -1,10 +1,11 @@
 <template>
-  <el-container class="main-container">
+  <el-container style="padding-top: 0; height: 100%;" direction="vertical">
     <el-header height="72px" v-bind:class="{ 'el-header--white': scrolled }">
       <eh-header></eh-header>
     </el-header>
-    <el-main style="padding: 0px">
-      <slot></slot>
+    <el-main style="padding-top: 0; height: 100%;" justify="space-around">
+      <slot>
+      </slot>
     </el-main>
   </el-container>
 </template>
@@ -37,3 +38,6 @@ export default {
 
 }
 </script>
+<style lang="scss" scoped>
+
+</style>
